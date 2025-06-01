@@ -1,7 +1,8 @@
 const { Schema, model, Types } = require('mongoose');
-const formatDate = require('../utils/dateFormat');
+const formatDate = require('./utils/dateFormat');
+const mongoose = require('mongoose');
 
-const reactionSchema = new Schema(
+const reactionSchema = new mongoose.Schema(
   {
     reactionId: {
       type: Schema.Types.ObjectId,

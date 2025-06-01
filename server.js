@@ -19,3 +19,5 @@ mongoose.connect('mongodb://localhost:27017/socialNetworkDB', {
 
 app.listen(PORT, () => console.log(`API running on http://localhost:${PORT}`));
 
+app.use('/api/thoughts', require('./routes/api/thoughtRoutes'));
+
